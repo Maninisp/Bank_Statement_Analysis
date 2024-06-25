@@ -10,14 +10,14 @@ The analysis in this repository supports the following columns:
 - **Type**
 
 ### Generating Dummy Bank Statement
-If you do not have an actual bank statement or statement with the above columns but still want to explore this repository, you can generate and analyze a dummy bank statement. The dummy bank statement data is generated in CSV and PDF formats using `generate_Statement.ipynb`.
+If you do not have an actual bank statement or statement with the above columns but still want to explore this repository, you can generate and analyze a dummy bank statement. The dummy bank statement data is generated in CSV and PDF formats using `generate_DummyStatement.ipynb`.
 
 ### Analysis Procedure
-The analysis of the bank statement is performed in `read_statement.ipynb`.
+The analysis of the bank statement is performed in `analyse_statement.ipynb`.
 
 ## Files
 
-### 1. `generate_Statement.ipynb`
+### 1. `generate_DummyStatement.ipynb`
 
 - **Purpose**: Generates a dummy bank statement in CSV and PDF formats.
 - **Functionality**:
@@ -25,7 +25,7 @@ The analysis of the bank statement is performed in `read_statement.ipynb`.
   - Outputs data to a CSV file (`Bank_Statement.csv`).
   - Generates a PDF bank statement (`Bank_Statement.pdf`), as most banks provide statements in PDF format.
 
-### 2. `read_statement.ipynb`
+### 2. `analyse_statement.ipynb`
 
 - **Purpose**: Analyzes the generated PDF bank statement.
 - **Functionality**:
@@ -46,10 +46,10 @@ The analysis of the bank statement is performed in `read_statement.ipynb`.
 
 ### Generating Bank Statement:
 
-- Open and execute `generate_Statement.ipynb` to generate the dummy bank statement.
+- Open and execute `generate_DummyStatement.ipynb` to generate the dummy bank statement.
 - Ensure necessary libraries (`fpdf`, `pandas`, etc.) are installed.
 
 ### Analyzing Bank Statement:
 
-- Open and execute `read_statement.ipynb` to analyze the generated `Bank_Statement.pdf`.
+- Open and execute `analyse_statement.ipynb` to analyze the generated `Bank_Statement.pdf`.
 - Install required libraries (`pdfplumber`, `pandas`, etc.) for PDF table extraction.
